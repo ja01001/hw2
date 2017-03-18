@@ -7,19 +7,21 @@
     tools:context="com.example.ja010.week3.Main2Activity"
     android:orientation="vertical"
     >
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id = "@+id/texts"
+                android:text="시작하려면 아래를 클릭하세요."
+                />
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content">
 
             <Switch
                 android:id="@+id/s1"
@@ -30,8 +32,159 @@
             <Chronometer
                 android:id="@+id/ch2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+               />
 
         </TableRow>
     </TableLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id ="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:visibility="invisible"
+            >
+
+            <DatePicker
+                android:id="@+id/dk2"
+                android:layout_width="wrap_content"
+                android:layout_height="377dp"
+                android:layout_columnSpan="2"/>
+            <!-- data pick  -->
+            <Button
+                android:id="@+id/bbf1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="이전"
+                android:textColor="#808080"/>
+
+            <Button
+                android:onClick="clcl"
+                android:id="@+id/bnext1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="다음" />
+        </GridLayout>
+        <GridLayout
+            android:id ="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:visibility="invisible"
+            ><!-- time pick  -->
+
+            <TimePicker
+                android:id="@+id/tk1"
+                android:layout_width="wrap_content"
+                android:layout_height="377dp"
+                android:layout_columnSpan="2"/>
+
+            <Button
+                android:onClick="clcl"
+                android:id="@+id/bbf2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="이전"/>
+
+            <Button
+                android:onClick="clcl"
+                android:id="@+id/bnext2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="다음" />
+        </GridLayout>
+        <GridLayout
+            android:id ="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:visibility="invisible"
+            >
+            <!-- text 처리할것   -->
+            <TableLayout>
+            <TableRow>
+                <TextView
+                android:id="@+id/tet"
+                android:layout_width="wrap_content"
+                android:layout_height="377dp"
+                android:layout_columnSpan="2"/>
+
+            </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/bbf3"
+                android:onClick="clcl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="이전"/>
+
+            <Button
+                android:id="@+id/bnext3"
+                android:onClick="clcl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="다음" />
+        </GridLayout>
+        <GridLayout
+            android:id ="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:visibility="invisible"
+            >
+
+            <TimePicker
+                android:id="@+id/txxt"
+                android:layout_width="wrap_content"
+                android:layout_height="377dp"
+                android:layout_columnSpan="2"/>
+
+            <Button
+                android:id="@+id/bbf4"
+                android:onClick="clcl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="이전"/>
+
+            <Button
+                android:id="@+id/bnext4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="다음"
+                android:textColor="#808080"/>
+        </GridLayout>
+    </FrameLayout>
+
 </LinearLayout>

@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             e1.setText(null);
             e2.setText(null);
             e3.setText(null);
-            t1.setText("0원");
-            t2.setText("0원");
+            t1.setText("0점");
+            t2.setText("0점");
             im1.setImageResource(0);
             Toast.makeText(getApplicationContext(),"초기화 되었습니다.",Toast.LENGTH_SHORT).show();
         }
