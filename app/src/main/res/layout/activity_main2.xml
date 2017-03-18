@@ -22,13 +22,13 @@
             android:layout_height="match_parent" >
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/s1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="시작함" />
 
             <Chronometer
-                android:id="@+id/chronometer2"
+                android:id="@+id/ch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
