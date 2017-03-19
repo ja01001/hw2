@@ -85,14 +85,17 @@ public class Main2Activity extends AppCompatActivity {
     void lay1(){ // layout datapicker 화면 출력
         //작동확인 Toast.makeText(getApplicationContext(),"화면출력",Toast.LENGTH_SHORT).show();
         l1.setVisibility(View.VISIBLE);
+        l2.setVisibility(View.INVISIBLE);
     }
     void lay2(){ //timepicker 화면출력
         l1.setVisibility(View.INVISIBLE);
         l2.setVisibility(View.VISIBLE);
+        l3.setVisibility(View.INVISIBLE);
     }
     void lay3(){ //people check layer
         l2.setVisibility(View.INVISIBLE);
         l3.setVisibility(View.VISIBLE);
+        l4.setVisibility(View.INVISIBLE);
     }
     void lay4(){ //final layer
         l3.setVisibility(View.INVISIBLE);

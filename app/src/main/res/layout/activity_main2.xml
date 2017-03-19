@@ -114,26 +114,91 @@
                 android:text="다음" />
         </GridLayout>
         <GridLayout
-            android:id ="@+id/fourth"
+            android:id ="@+id/third"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:padding="6dp"
             android:orientation="vertical"
-            android:rowCount="2"
+            android:rowCount="3"
             android:columnCount="2"
             android:visibility="invisible"
             >
             <!-- text 처리할것   -->
-            <TableLayout>
-            <TableRow>
-                <TextView
-                android:id="@+id/tet"
-                android:layout_width="wrap_content"
-                android:layout_height="377dp"
-                android:layout_columnSpan="2"/>
+            <TableLayout
+                android:layout_columnSpan="2"
+                android:layout_rowSpan="2">
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
 
-            </TableRow>
+                    <TextView
+
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="성인" />
+
+                    <EditText
+                        android:id="@+id/ex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="청소년" />
+
+                    <EditText
+                        android:id="@+id/ex2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="어린이"
+                        />
+
+                    <EditText
+                        android:id="@+id/ex3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_margin="100dp">
+
+                </TableRow>
             </TableLayout>
             <Button
                 android:id="@+id/bbf3"
@@ -141,7 +206,8 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="이전"/>
+                android:text="이전"
+                />
 
             <Button
                 android:id="@+id/bnext3"
@@ -152,22 +218,104 @@
                 android:text="다음" />
         </GridLayout>
         <GridLayout
-            android:id ="@+id/third"
+            android:id ="@+id/fourth"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:padding="6dp"
             android:orientation="vertical"
-            android:rowCount="2"
-            android:columnCount="2"
-            android:visibility="invisible"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:visibility="visible"
             >
 
-            <TimePicker
-                android:id="@+id/txxt"
-                android:layout_width="wrap_content"
-                android:layout_height="377dp"
-                android:layout_columnSpan="2"/>
+            <TableLayout
+                android:layout_columnSpan="2"
+                android:layout_rowSpan="2"
+                android:layout_width="wrap_content">
+                <TableRow>
+                    <TextView
+
+                        android:id="@+id/txs"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="예약 결과는 다음과 같습니다."
+                        android:textSize="22dp"
+                        android:textColor="#0000ff"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:id="@+id/tx1"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:text="성인" />
+
+                    <TextView
+                        android:id="@+id/tx2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/tx3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="청소년" />
+
+                    <TextView
+                        android:id="@+id/tx4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tx5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="어린이"
+                        />
+
+                    <TextView
+                        android:id="@+id/tx6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="인원 입력"
+                        android:inputType="number" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_margin="100dp">
+
+                </TableRow>
+            </TableLayout>
 
             <Button
                 android:id="@+id/bbf4"
