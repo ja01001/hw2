@@ -226,7 +226,7 @@
             android:orientation="vertical"
             android:rowCount="3"
             android:columnCount="3"
-            android:visibility="visible"
+            android:visibility="invisible"
             >
 
             <TableLayout
@@ -249,21 +249,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     >
-
+                    <!--10tap-->
                     <TextView
 
                         android:id="@+id/tx1"
                         android:layout_width="10dp"
                         android:layout_height="match_parent"
-                        android:text="성인" />
+                        android:text="날짜:                                       " />
 
-                    <TextView
-                        android:id="@+id/tx2"
-                        android:layout_width="10dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="인원 입력"
-                        android:inputType="number" />
 
                 </TableRow>
 
@@ -271,19 +264,12 @@
                     android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
-
                     <TextView
-                        android:id="@+id/tx3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="청소년" />
-
-                    <TextView
-                        android:id="@+id/tx4"
+                        android:id="@+id/tx2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="인원 입력"
+                        android:text="날짜:                                       " />
                         android:inputType="number" />
 
                 </TableRow>
@@ -296,19 +282,54 @@
                     >
 
                     <TextView
+                        android:id="@+id/tx3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="날짜:                                       " />
+                        android:inputType="number" />
+
+                </TableRow>
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:id="@+id/tx4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="날짜:                                       " />
+                    android:inputType="number" />
+
+                </TableRow>
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
                         android:id="@+id/tx5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="어린이"
-                        />
+                        android:ems="10"
+                        android:text="날짜:                                       " />
+                    android:inputType="number" />
 
+                </TableRow>
+                <TableRow
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
                     <TextView
                         android:id="@+id/tx6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="인원 입력"
-                        android:inputType="number" />
+                        android:text="예약 되었습니다."
+                        android:textSize="30dp"
+                        android:textColor="#A52A2A"
+                        />
+                    android:inputType="number" />
 
                 </TableRow>
                 <TableRow
