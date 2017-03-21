@@ -46,9 +46,7 @@ public class Main2Activity extends AppCompatActivity {
         e1 = (EditText)findViewById(R.id.ex1);
         e2 = (EditText)findViewById(R.id.ex2);
         e3 = (EditText)findViewById(R.id.ex3);
-      //  ad =Integer.parseInt(e1.getText().toString());
-       // yo =Integer.parseInt(e2.getText().toString());
-       // ch =Integer.parseInt(e3.getText().toString());
+        setTitle("레스토랑 예약 시스템 ");
         swc();
     }
     public void clcl(View v){// 클릭이벤트

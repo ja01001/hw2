@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         t1 = (TextView)findViewById(R.id.t1);
         t2 = (TextView)findViewById(R.id.t2);
         im1 = (ImageView) findViewById(R.id.im1);
+        setTitle("학점 계산기");
 
 
     }
